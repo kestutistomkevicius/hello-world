@@ -41,6 +41,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -124,7 +125,6 @@
               ]
             },
             "id": "6d262e3e-c65f-4245-9050-a072bc611c1f",
-            "zIndex": 1,
             "data": {
               "type": "tm.Store",
               "name": "Source Database",
@@ -161,6 +161,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -244,7 +245,6 @@
               ]
             },
             "id": "2b8580cc-f926-491d-a6b3-364a9e43ca68",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "PDM ETL",
@@ -283,6 +283,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -366,7 +367,6 @@
               ]
             },
             "id": "b0e2ed41-a336-4c66-af57-45b8cb03e021",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "PDM SQL",
@@ -464,7 +464,8 @@
             },
             "target": {
               "cell": "adb793ba-3492-482d-8d22-acddb7a7855c"
-            }
+            },
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -655,7 +656,7 @@
           {
             "position": {
               "x": 236,
-              "y": 50
+              "y": 130
             },
             "size": {
               "width": 120,
@@ -676,6 +677,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -759,7 +761,6 @@
               ]
             },
             "id": "adb793ba-3492-482d-8d22-acddb7a7855c",
-            "zIndex": 11,
             "data": {
               "type": "tm.Store",
               "name": "Azure Key Vault",
@@ -796,6 +797,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -879,7 +881,6 @@
               ]
             },
             "id": "da012dd6-c4e6-429c-bb39-6103085179ed",
-            "zIndex": 12,
             "data": {
               "type": "tm.Process",
               "name": "PDM API",
@@ -915,6 +916,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -998,7 +1000,6 @@
               ]
             },
             "id": "d9421e26-b2d5-469e-9e9f-84c88a4596de",
-            "zIndex": 13,
             "data": {
               "type": "tm.Process",
               "name": "Omnia APIM",
@@ -1034,6 +1035,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1117,7 +1119,6 @@
               ]
             },
             "id": "e064eb2b-d935-4539-b91b-63bb1254ea41",
-            "zIndex": 14,
             "data": {
               "type": "tm.Actor",
               "name": "Power BI dashboard",
@@ -1147,6 +1148,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1230,7 +1232,6 @@
               ]
             },
             "id": "48b6e278-022e-4ba5-b1cf-0c90febafce6",
-            "zIndex": 15,
             "data": {
               "type": "tm.Actor",
               "name": "Actor",
@@ -1245,7 +1246,7 @@
           {
             "position": {
               "x": 662,
-              "y": 50
+              "y": 130
             },
             "size": {
               "width": 120,
@@ -1266,6 +1267,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -1349,7 +1351,6 @@
               ]
             },
             "id": "8b0c30a9-2a25-4874-aa40-5328b51d5b92",
-            "zIndex": 16,
             "data": {
               "type": "tm.Store",
               "name": "Redis Cache",
@@ -1374,7 +1375,7 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": ""
+                  "name": "block"
                 },
                 "strokeDasharray": null
               }
@@ -1385,19 +1386,19 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Check ",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "isBidirectional": false,
+              "isBidirectional": true,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "Check "
             ],
             "id": "d7ded00f-9fe4-46f1-8cb7-f438b16719b1",
             "source": {
@@ -1406,18 +1407,14 @@
             "target": {
               "cell": "8b0c30a9-2a25-4874-aa40-5328b51d5b92"
             },
+            "vertices": [
+              {
+                "x": 722,
+                "y": 80
+              }
+            ],
             "tools": {
               "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
                 "boundary",
                 "button-remove",
                 "vertices",
@@ -1685,8 +1682,7 @@
                 "target-arrowhead"
               ],
               "name": null
-            },
-            "vertices": []
+            }
           }
         ],
         "description": "STRIDE-based main PDM diagram"
