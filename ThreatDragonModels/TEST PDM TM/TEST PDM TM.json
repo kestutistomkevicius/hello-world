@@ -11,7 +11,7 @@
     "diagrams": [
       {
         "id": 0,
-        "title": "New STRIDE diagram",
+        "title": "Main PDM diagram",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
@@ -1688,7 +1688,8 @@
             },
             "vertices": []
           }
-        ]
+        ],
+        "description": "STRIDE-based main PDM diagram"
       }
     ],
     "diagramTop": 1,
