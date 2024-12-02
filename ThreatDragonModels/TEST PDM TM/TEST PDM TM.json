@@ -19,6 +19,27 @@
         "cells": [
           {
             "position": {
+              "x": 392,
+              "y": -132.65625
+            },
+            "size": {
+              "width": 310,
+              "height": 145.3125
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "be6939b9-7936-4a26-ac46-db8083815c5e",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
               "x": -70,
               "y": -90
             },
@@ -444,49 +465,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Fetch secrets",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Fetch secrets"
-            ],
-            "id": "93af54af-b804-4aa8-9e8f-3b358e21129b",
-            "source": {
-              "cell": "2b8580cc-f926-491d-a6b3-364a9e43ca68"
-            },
-            "target": {
-              "cell": "adb793ba-3492-482d-8d22-acddb7a7855c"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Ingested data",
               "description": "",
               "outOfScope": false,
@@ -705,7 +683,17 @@
                 "x": 860,
                 "y": -20
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -988,6 +976,96 @@
             "target": {
               "cell": "8b0c30a9-2a25-4874-aa40-5328b51d5b92"
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Fetch secrets",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Fetch secrets"
+            ],
+            "id": "93af54af-b804-4aa8-9e8f-3b358e21129b",
+            "source": {
+              "cell": "2b8580cc-f926-491d-a6b3-364a9e43ca68"
+            },
+            "target": {
+              "cell": "adb793ba-3492-482d-8d22-acddb7a7855c"
+            },
+            "vertices": [
+              {
+                "x": 296,
+                "y": 70
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              {
+                "attrs": {
+                  "label": {
+                    "text": "Trust Boundary"
+                  }
+                }
+              }
+            ],
+            "id": "61bfb0f9-a0c5-484e-ad07-7196f8cf08c2",
+            "source": {
+              "x": 130,
+              "y": -350
+            },
+            "target": {
+              "x": 60,
+              "y": 90
+            },
+            "vertices": [
+              {
+                "x": 170,
+                "y": -280
+              },
+              {
+                "x": 170,
+                "y": -130
+              }
+            ]
           },
           {
             "position": {
