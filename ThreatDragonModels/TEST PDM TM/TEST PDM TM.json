@@ -948,6 +948,48 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Check cached API user",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Check cached API user"
+            ],
+            "id": "fa649ee6-0085-4f23-8afe-0853242a5e38",
+            "source": {
+              "cell": "da012dd6-c4e6-429c-bb39-6103085179ed"
+            },
+            "target": {
+              "cell": "8b0c30a9-2a25-4874-aa40-5328b51d5b92"
+            }
+          },
+          {
             "position": {
               "x": 236,
               "y": 130
@@ -1542,8 +1584,8 @@
           },
           {
             "position": {
-              "x": 662,
-              "y": 130
+              "x": 702,
+              "y": 120
             },
             "size": {
               "width": 120,
